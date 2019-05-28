@@ -7,7 +7,6 @@ package tk.mmagames.registrovideojuegos;
 import java.io.FileNotFoundException;// este y el de debajo son los de almacenar
 import java.io.PrintWriter;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -57,6 +56,4 @@ public class GestorJuegos extends GestorBBDD {
         pw.print(nuevoJuego.getPrecio());
         pw.close();
     }*/
-
-    
 }
