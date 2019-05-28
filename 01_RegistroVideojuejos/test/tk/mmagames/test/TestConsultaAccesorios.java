@@ -44,10 +44,8 @@ public class TestConsultaAccesorios {
 
     @Test
     public void tablaAccesorios() {
-      GestorAcc ga = null;
-       
-       
-       try {
+        GestorAcc ga = null;
+        try {
             ga = new GestorAcc();
             ResultSet rs = ga.getAcc();
         } catch (Exception e) {
@@ -63,3 +61,4 @@ public class TestConsultaAccesorios {
         }
     }
 }
+//CODIGO MODIFICADO POR MANU
