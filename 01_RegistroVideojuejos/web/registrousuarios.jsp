@@ -1,11 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%
-    HttpSession misession = request.getSession(true);
-    if (misession.getAttribute("validado") == null) {
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/validadoradmin.jsp");
-        dispatcher.forward(request, response);
-    }
-%>
+
 
 
 <!DOCTYPE html>
@@ -30,11 +24,16 @@
                 } else {
                     document.getElementById("forusuario").submit();
                     console.log("ok");
+                    alert("TE HAS REGISTRADO CORRECTAMENTE");
                 }
             }
 
         </script>
         <style>
+            *{
+              padding: 0;
+              margin: 0;
+            }
             .fondo{
                 background-color: salmon;
 
@@ -46,6 +45,11 @@
 
                 box-shadow: 4px 23px 34px 52px rgba(173,214,219,1);
 
+            }
+            
+            body{
+                
+                background-image: url("img/manu grande.jpg")
             }
 
         </style>

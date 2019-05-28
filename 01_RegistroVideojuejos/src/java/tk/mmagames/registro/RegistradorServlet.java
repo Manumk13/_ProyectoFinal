@@ -43,7 +43,7 @@ public class RegistradorServlet extends HttpServlet {
             GestorUsuario ges = new GestorUsuario();
             ges.registrar(u1);
             ges.cerrarConexion();
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/correcto.html");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.html");
             dispatcher.forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
