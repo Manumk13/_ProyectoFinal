@@ -56,6 +56,14 @@
         <servlet-name>ValidadorAdminServlet</servlet-name>
         <servlet-class>tk.mmagames.validadoradmin.ValidadorAdminServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AgregarProductosServlet</servlet-name>
+        <servlet-class>tk.mmagames.cesta.AgregarProductosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CestaServlet</servlet-name>
+        <servlet-class>tk.mmagames.cesta.CestaServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistroServlet</servlet-name>
         <url-pattern>/RegistroServlet</url-pattern>
@@ -111,6 +119,14 @@
     <servlet-mapping>
         <servlet-name>ValidadorAdminServlet</servlet-name>
         <url-pattern>/ValidadorAdminServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarProductosServlet</servlet-name>
+        <url-pattern>/AgregarProductosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CestaServlet</servlet-name>
+        <url-pattern>/CestaServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
