@@ -11,13 +11,7 @@
         mensaje = "";
     }
 %>
-<%
-HttpSession misession= request.getSession(true);
-if (misession.getAttribute("validado")==null){
-	RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/validadoradmin.jsp");
-        dispatcher.forward(request, response);
-}
-%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,7 +31,10 @@ if (misession.getAttribute("validado")==null){
                 box-shadow: 4px 23px 34px 52px rgba(173,214,219,1);
              
             }
-
+             body{
+                
+                background-image: url("img/manu grande.jpg")
+            }
 
         </style>
     </head>

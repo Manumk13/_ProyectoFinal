@@ -1,0 +1,343 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(https://images3.alphacoders.com/650/650873.jpg); 
+    background-repeat:repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+.derecha{
+
+
+    margin-left: 1750px;
+
+
+
+
+}
+.container{
+
+
+    width: auto;
+}
+
+
+
+
+
+.izquierda{
+margin-right: 1750px;
+
+ 
+    }
+
+
+
+
+
+
+#submenu li{
+ display:inline-block;
+ position: sticky;
+ top: 0;
+ position:relative;
+        
+ }
+
+ #submenu li>a{
+  text-decoration: none;
+   
+           
+    }
+
+.cuerpo{
+
+display: flex;
+
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+
+
+
+
+}    
+
+.filtro{
+/*width: 200px;*/
+background-color: rgba(3, 44, 97, 0.966);
+height: auto;
+padding: 0;
+width: auto;
+
+
+}
+.principal{
+   /* width: 600px;*/
+    background-color: rgba(190, 92, 0, 0.945);
+    
+    height: auto;
+    
+    }
+
+   
+.back{
+opacity: 1;
+background-color: darkslategray;
+color:black;    
+
+}
+.back p{
+
+float: left;
+}
+ 
+ .titulo{
+
+   color:white;
+   font-family: 'Audiowide', cursive;
+   font-size: 80px;
+
+   
+
+
+
+ }
+ .ul{
+
+    text-align: right;
+ }
+
+ .consola{
+
+background-color:darkgray;
+width: 100%;
+/*margin-top: 5px;*/
+
+
+ }
+
+ .consola h3{
+
+    color:white;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+ }
+
+ .contconsola{
+
+background-color: white;
+text-align: center;
+
+ }
+
+ .filconsolas{
+
+    text-align: center;
+ }
+ .filconsolas h2{
+     color: aliceblue;
+     background-color: black;
+     font-family: 'ZCOOL KuaiLe', cursive;
+     
+
+    
+ }
+
+ .fpc{
+
+    color:whitesmoke;
+    background-color: rgba(3, 44, 97, 0.966);
+    font-family: 'ZCOOL KuaiLe', cursive;
+ }
+ .centrar{
+
+    text-align: left;
+
+   padding-left: 60px;
+
+   
+ }
+
+            
+ .container1 img{
+
+width:100%;
+height: 100%; 
+margin: 0;
+ }
+ 
+ 
+
+ .h2{
+
+text-align: center;
+
+
+
+ }
+ footer {
+
+    clear: both;
+    text-align: center;
+    background-image: url(https://us.123rf.com/450wm/naropano/naropano1606/naropano160600702/58760755-fondo-gris-oscuro-el-dise%C3%B1o-de-textura-fondo-del-grunge-.jpg?ver=6); 
+}
+
+
+.logoredes {
+
+
+    width: 80%;
+    height: 80%;
+    margin: 20px;
+}
+
+.logoredes img {
+
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+
+}
+
+.fpc{
+
+width: 100%;
+
+
+}
+
+.footer {
+    height: 2000px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    opacity: 0.95;
+  }
+
+
+
+ 
+a{
+
+
+    text-decoration: none;
+}
+
+.text1{
+margin: 0;
+padding: 0;
+float: left;
+}
+
+.text2{
+
+    margin: 0;
+    padding: 0;
+float: right;
+
+
+}
+
+.contcol{
+
+
+margin: 0;
+padding: 0;
+}
+
+.col6{
+
+background-color: gray;
+
+
+
+}
+
+.columna{
+
+background-color: gray;
+
+}
+
+.containerjuegos{
+
+
+
+background-color: darkblue;
+opacity: 0.8;
+width: 100%;
+height: 110%;
+padding: 10px;
+border-radius: 2%;
+
+
+}
+
+.containerjuegos img{
+
+opacity: 1;
+
+}
+.imgjuegos img{
+
+float: left;
+opacity: 1;
+
+}
+
+.boton_1 {
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: 3px double white;
+}
+
+
+#pie {
+	position: fixed;
+	width:100%;
+	bottom: 0;
+	left: 0;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	font-size:16px;
+	background-color: #000000;
+	opacity:0;
+}
+
+.boton_02{
+
+
+
+
+float: right;
+
+
+
+}
