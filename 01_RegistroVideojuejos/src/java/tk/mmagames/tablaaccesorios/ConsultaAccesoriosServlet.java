@@ -1,7 +1,4 @@
-/*
-Desarrollado por MMA GAMES
-(C)2019
- */
+
 package tk.mmagames.tablaaccesorios;
 
 import java.io.IOException;
