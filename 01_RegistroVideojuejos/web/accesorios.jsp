@@ -328,7 +328,7 @@
                                                     <p class="card-text"><%=filacc.getString("precio")%>€</p>
                                                     <br><br><br>
                                                     <a class="boton_1"
-                                                       href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
+                                                       href="">Comprar ahora</a>
 
                                                 </div>
                                             </div>

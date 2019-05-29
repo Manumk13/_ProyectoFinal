@@ -29,7 +29,7 @@ public class CestaServlet extends HttpServlet {
             System.out.println("TODO CORRECTO");
             //Forward
             RequestDispatcher dispatcher = 
-                    getServletContext().getRequestDispatcher("/cesta.jsp");
+                    getServletContext().getRequestDispatcher("/vercesta.jsp");
             request.setAttribute("datos",cesta);
             dispatcher.forward(request, response);
         } catch (Exception e){

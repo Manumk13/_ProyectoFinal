@@ -67,8 +67,8 @@
     <servlet>
         <servlet-name>FiltroAccesoriosServlet</servlet-name>
         <servlet-class>tk.mmagames.filacc.FiltroAccesoriosServlet</servlet-class>
-    </servlet>        
-    <servlet>        
+    </servlet>
+    <servlet>
         <servlet-name>AgregarProductosServlet</servlet-name>
         <servlet-class>tk.mmagames.cesta.AgregarProductosServlet</servlet-class>
     </servlet>
