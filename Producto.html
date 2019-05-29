@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <title>Producto</title>
+    <script src="js/script.1.js"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        background-image: url(https://cdn.topgear.es/sites/navi.axelspringer.es/public/media/image/2015/07/495746-mejores-juegos-ps4.jpg);
+        background-repeat: repeat;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+
+    .filconsolas {
+
+
+        height: auto;
+    }
+
+
+
+
+
+    .derecha {
+
+
+        margin-left: 1750px;
+
+
+
+
+    }
+
+    .container {
+
+
+        width: auto;
+    }
+
+
+
+
+
+    .izquierda {
+        margin-right: 1750px;
+
+
+    }
+
+
+
+
+
+
+    #submenu li {
+        display: inline-block;
+        position: sticky;
+        top: 0;
+        position: relative;
+
+    }
+
+    #submenu li>a {
+        text-decoration: none;
+
+
+    }
+
+    .cuerpo {
+
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        height: auto;
+
+
+
+
+    }
+
+    .filtro {
+        /*width: 200px;*/
+        background-color: rgba(3, 44, 97, 0.966);
+        height: auto;
+        padding: 0;
+
+
+
+    }
+
+    .principal {
+        /* width: 600px;*/
+        background-color: rgba(190, 92, 0, 0.945);
+
+        height: auto;
+
+    }
+
+
+
+
+
+    .titulo {
+
+        color: white;
+        font-family: 'Audiowide', cursive;
+        font-size: 80px;
+
+
+
+
+
+    }
+
+    .ul {
+
+        text-align: right;
+    }
+
+    .consola {
+
+        background-color: darkgray;
+        width: 100%;
+        /*margin-top: 5px;*/
+
+
+    }
+
+    .consola h3 {
+
+        color: white;
+        text-align: center;
+        font-family: 'Black Ops One', cursive;
+        font-size: 20px;
+    }
+
+    .contconsola {
+
+        background-color: white;
+        text-align: center;
+
+    }
+
+    .filconsolas {
+
+        text-align: center;
+    }
+
+    .filconsolas h2 {
+        color: aliceblue;
+        background-color: black;
+        font-family: 'ZCOOL KuaiLe', cursive;
+
+
+
+    }
+
+    .back {
+        opacity: 0.9;
+        background-color: rgb(42, 26, 143);
+        color: whitesmoke;
+
+    }
+
+    .back p {
+
+        float: left;
+    }
+
+    .fpc {
+
+        color: whitesmoke;
+        background-color: rgba(3, 44, 97, 0.966);
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .centrar {
+
+        text-align: left;
+
+        padding-left: 60px;
+
+
+    }
+
+
+    .container1 img {
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+
+
+    .h2 {
+
+        text-align: center;
+        background-color: black;
+
+
+    }
+
+
+
+
+    .fpc {
+
+        color: whitesmoke;
+        background-color: rgba(3, 44, 97, 0.966);
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .centrar {
+
+        text-align: left;
+
+        padding-left: 60px;
+
+
+    }
+
+
+    .container1 img {
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+
+
+
+    footer {
+
+        clear: both;
+        text-align: center;
+        background-image: url(https://us.123rf.com/450wm/naropano/naropano1606/naropano160600702/58760755-fondo-gris-oscuro-el-dise%C3%B1o-de-textura-fondo-del-grunge-.jpg?ver=6);
+    }
+
+
+
+
+    .fpc {
+
+        width: 100%;
+
+
+    }
+
+    .footer {
+        height: 2000px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: cadetblue;
+        color: white;
+        text-align: center;
+        opacity: 0.95;
+    }
+
+
+
+
+    .columna {
+
+        background-color: gray;
+
+    }
+
+    .logoredes {
+
+
+        width: 80%;
+        height: 80%;
+        margin: 20px;
+    }
+
+    .logoredes img {
+
+        width: 20%;
+        height: 20%;
+        margin: 20px;
+
+    }
+
+
+    #pie {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        background-color: #000000;
+        opacity: 0;
+    }
+
+    .boton_02 {
+        float: right;
+    }
+
+
+    .columna2 {
+
+        padding: 10px;
+        background-color: rgb(42, 26, 143);
+
+
+
+
+    }
+
+    .principal2 {
+
+
+        background-color: darkslateblue;
+
+    }
+
+    .imagenj1 {
+
+        float: left;
+        margin: 5%;
+
+
+    }
+
+    .imagen-previa-video {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imagen-previa-video li {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .imagen-previa-video li img {
+        cursor: pointer;
+    }
+
+    .containerj {
+
+
+        background-color: azure;
+
+
+    }
+
+    .containerj2 {
+
+
+        background-color: black;
+
+
+    }
+
+
+    .boton_1 {
+        text-decoration: none;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: helvetica;
+        font-weight: 300;
+        font-size: 25px;
+        font-style: italic;
+        color: white;
+        background-color: black;
+        border-radius: 15px;
+        border: 3px double white;
+
+
+    }
+</style>
+
+<body>
+
+    <header>
+
+        <div id="menuprincipal">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand"><img src="https://logopond.com/logos/0b083f451311e8d038a9abaa1d93726a.png"
+                        width="200" height="100" alt=""></a>
+                <h1 class="titulo">MMA GAMES</h1>
+
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+
+
+
+        </div>
+
+
+
+        <nav id="submenu">
+
+            <nav class="navbar navbar-dark bg-info men">
+                <div class="ul">
+                    <ul>
+                        <div class="izquierda">
+                            <li> <a class="text-white" href=""><u>MI CUENTA</u> </a></li>
+                        </div>
+
+                        <div class="derecha">
+                            <li><a class="text-white" href=""><u>REGISTRATE</u></a></li>
+                        </div>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+        </nav>
+
+
+
+    </header>
+
+    <div class="container">
+
+        <div class="container">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="http://4.bp.blogspot.com/-Y5dzK5i2OqY/V_Q76eUkxRI/AAAAAAAAAEU/IzNzt92o5HMgLkzvOc9z6T5oM4ia4egeQCK4B/s1600/wallpaper-carrousel-battlefield1.png"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Battlefield</h5>
+                                <p>Revolution</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://3.bp.blogspot.com/-Hv3ZBdJTLd8/V_Q4mf5zj9I/AAAAAAAAADs/Ezh9cg6advMTaRblj_8GG-Typpe8bQLegCK4B/s1600/carroufifia17.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Fifa</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img src="http://4.bp.blogspot.com/-E9Mv_fPBBxc/V_Q6ms1LFSI/AAAAAAAAAD4/lLvrTwaKgHsUooy07NaWY3egH_VyuNOLACK4B/s1600/wowlegion1.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Warcraft</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="http://2.bp.blogspot.com/-17oImzTsiDo/V_Q7-ybYn1I/AAAAAAAAAEc/2zXRnpWm-1Y56b6P_LObjAlk2WjJCu6cACK4B/s1600/wallpaper-carrousel-mafia3.png"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Mafia</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cuerpo ">
+
+                <div class="filtro  col-4 ">
+
+                    <div class="filconsolas">
+
+                        <h2>FILTRAR</h2>
+                        <div class="consola">
+
+                            <h3>CONSOLAS</h3>
+
+                            <div class="contconsola">
+
+
+                                <div class="centrar">
+
+                                    <input type="checkbox" name="" value="1"> PS4 <br>
+                                    <input type="checkbox" name="" value="2"> X-BOX ONE <br>
+                                    <input type="checkbox" name="" value="3"> NINTENDO SWITCH <br>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="consola">
+
+                            <h3>VIDEOJUEGOS</h3>
+
+
+                            <div class="contconsola">
+
+                                <div>
+                                    <p class="fpc">Filtrar por consola</P>
+                                </div>
+                                <div class="centrar ">
+                                    <label for=""> <input type="checkbox" name="type[]" value="4"> PS4 </label><br>
+                                    <label for=""> <input type="checkbox" name="type[]" value="5" id=""> NINTENDO
+                                    </label><br>
+                                    <label for=""> <input type="checkbox" name="type[]" value="6" id=""> XBOX
+                                    </label><br>
+
+
+                                </div>
+                                <div>
+                                    <h2 class="fpc">Nuestras redes sociales</h2>
+                                </div>
+                                <div class="centrar">
+                                    <div class="logoredes">
+
+                                        <h2>Instagram</h2>
+                                        <a href="https://www.instagram.com/mma_games/" target="_blank"><img
+                                                src="https://img.programas-gratis.net/ico/instagram.png"></a>
+
+                                        <br>
+
+                                        <h2>Twitter</h2>
+                                        <a href="https://twitter.com/MmagamesE" target="_blank"><img
+                                           
+                                            src="https://i.guim.co.uk/img/static/sys-images/Observer/Pix/pictures/2011/9/22/1316690227919/applogo-twitter-001.jpg?width=300&quality=85&auto=format&fit=max&s=e6cd378faa1a0ee38b851ee7c4e2fc3c"></a>
+
+                                        <br>
+
+                                        <h2>Facebook</h2>
+                                        <a href="https://www.youtube.com/channel/UCDSnShBasZXBrp48Tu87eZA/featured?view_as=subscriber"
+                                            target="_blank"><img
+                                                src="https://img.programas-gratis.net/ico/facebook.png"></a>
+                                        <br>
+
+                                        <h2>Youtube</h2>
+                                        <a href="https://www.youtube.com/channel/UCDSnShBasZXBrp48Tu87eZA/featured?view_as=subscriber"
+                                            target="_blank"><img
+                                                src="https://metro.co.uk/wp-content/uploads/2008/02/youtube_65x651.jpg?quality=90&strip=all"></a>
+
+
+
+
+
+                                    </div>
+                                    <div class=container>
+
+                                        <img
+                                            src="https://pbs.twimg.com/profile_images/378800000020345578/8c22adb9311f69054b4a254e6e15a69b.jpeg">
+                                    </div>
+       
+                                </div>
+
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-12  columna">
+                                        <h2>Novedades</h2>
+                                        
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="https://i.pinimg.com/originals/52/1c/ae/521caea344745eeb750746771505167a.jpg" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption d-none d-md-block">
+                                            <h5>Assasins Creed IV Black Flag</h5>
+                                            <p>Ya disponible para PS4</p>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="https://i.pinimg.com/originals/bc/9d/5b/bc9d5b6e212c34e7c273352f65e44d89.png" class="d-block w-100" alt="...">
+                                          <div class="carousel-caption d-none d-md-block">
+                                            <h5>Second slide label</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                          </div>
+                                        </div>
+                                     
+                                        <div class="carousel-item">
+                                                <img src="https://wallpapershome.com/images/wallpapers/mirror-039-s-edge-1080x1920-mirrors-edge-catalyst-faith-connors-pc-ps4-xbox-one-10640.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Third slide label</h5>
+                                                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div>
+                                              </div>
+
+                                        <div class="carousel-item">
+                                                <img src="http://getwallpapers.com/wallpaper/full/4/4/5/995802-dead-island-wallpaper-1080x1920-for-lockscreen.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Third slide label</h5>
+                                                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div>
+                                              </div>
+
+                                              <div class="carousel-item">
+                                                    <img src="https://i.pinimg.com/originals/cf/31/81/cf3181d5c6d79daea0a5d1e7cc7f2e08.jpg" class="d-block w-100" alt="...">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                      <h5>Third slide label</h5>
+                                                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                    </div>
+                                                  </div>
+                                      </div>
+                                      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                    
+
+                                    </div>
+                                    
+                                </div>
+
+                                
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+
+                <div class="principal  col-8 col-sm-8  col-md-8 col-lg-8 col-xl-8">
+                    <div class="containerj">
+                        <img src="https://images.g2a.com/newlayout/323x433/1x1x0/cee86c61442a/59886485ae653acb850d4532"
+                            width="220" height="305" alt="" class="imagenj1">
+
+                        <h2><u>Call Of Duty:Black Ops II</u></h2>
+
+
+                        <p>Black Ops II es el primer título de la serie que se establece en un ambiente completamente
+                            futurista; a diferencia de sus dos antecesores, Modern Warfare 3 y Black Ops, que se
+                            establecían
+                            en un futuro cercano y en la Guerra Fría, respectivamente. La nueva ambientación se ha
+                            descrito
+                            como una "Guerra Fría del siglo XXI".13​
+
+                            El juego incluirá dos líneas argumentales, en el año 1980 y en 2025; en este último, China y
+                            los
+                            Estados Unidos están enfrascados en una guerra fría, debido a que China prohíbe la
+                            exportación
+                            de elementos de recursos naturales después de haber recibido un ciberataque que paraliza su
+                            Bolsa de Valores.14​ La guerra en la que Black Ops II se sitúa está ahora definida por la
+                            robótica, la informática, vehículos no tripulados y otros adelantos tecnológicos.15​
+
+                            El argumento del juego inicia en los años 80 durante la Guerra Fría, esto con el fin de
+                            centrarse en el origen de la historia del principal antagonista de Black Ops II, Raúl
+                            Menéndez;
+                            que, en 2025, es él quien provoca la guerra entre China y EE.UU.15​ En la línea temporal de
+                            1980, el protagonista es Alex Mason, quien también lo era en Black Ops. Frank Woods, otro de
+                            los
+                            personajes de Black Ops, vuelve a este argumento y es además el narrador de la línea
+                            temporal de
+                            1980. En la sección de este año el protagonista será David Mason, hijo de Alex.16​</p>
+
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/imggrande/bo.jpg" id="fotogrande2" width="612" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/imgpequena/p5.jpg" onclick="cambiarfoto('mini5')" id="mini5"
+                                        width="150" alt="" onmouseover="aclarar(event)" onmouseout="oscurecer(event)">
+
+
+                                    <img src="img/imgpequena/p6.jpg" onclick="cambiarfoto('mini6')" id="mini6"
+                                        width="150" alt="" onmouseover="aclarar(event)" onmouseout="oscurecer(event)">
+
+
+                                    <img src="img/imgpequena/p7.jpg" onclick="cambiarfoto('mini7')" id="mini7"
+                                        width="150" alt="" onmouseover="aclarar(event)" onmouseout="oscurecer(event)">
+
+
+                                    <img src="img/imgpequena/p8.jpg" onclick="cambiarfoto('mini8')" id="mini8"
+                                        width="150" alt="" onmouseover="aclarar(event)" onmouseout="oscurecer(event)">
+
+
+
+                                </div>
+
+                            </div>
+
+
+                            <br>
+                            <div class="containerj2">
+                                <img src="https://sites.google.com/site/informaticawist/_/rsrc/1468759123427/config/customLogo.gif?revision=15"
+                                    width="100%" height="150">
+
+                                <p>
+                                        <font color="orange"> <h3><u>Modo multijugador</u></h3> </font><br>
+                                        <font color="gray">En 2013, Retrominano, el mejor jugador de Black Ops 2 con las mejores puntuaciones
+                                    en Estados Unidos, tuvo que retirarse por recibir ataques de denegación de servicio,
+                                    a lo que modificó su dirección IP, sin obtener resultados.<br><br>
+
+                                    En 2015 recibió un hackeo en PlayStation 3.18​ Volvió a ser hackeado en
+                                    2017.</font><br><br><br>
+
+                                    <img src="https://i.ytimg.com/vi/sIWnz0x_pSQ/maxresdefault.jpg" width="100%"
+                                        height="400">
+
+                                        <font color="orange"> <h3><u>Modo "Zombis"</u></h3> <br></font>
+                                        <font color="gray">En Black Ops II, Treyarch vuelve con su popular modo "Zombies", en cuya interacción
+                                    se destacaran los elementos dinámicos como el bus de "TranZit". A esto se suma la
+                                    inclusión de un nuevo un modo llamado "Pena", que albergará hasta ocho jugadores
+                                    (que consisten de dos equipos de cuatro) en donde los dos equipos tienen que
+                                    sobrevivir por separado y sacarle ventaja a sus adversarios. Mientras tanto, vuelve
+                                    el modo clásico, esta vez llamado "Survival" cuyo objetivo es básicamente el mismo
+                                    visto en anteriores entregas producidas por Treyarch, el cual es sobrevivir a
+                                    incesantes hordas de zombis el mayor tiempo posible. Contara con un motor gráfico
+                                    mejorado que será capaz de tener el doble de zombis en una partida. Los personajes
+                                    del Black Ops serán jugables mediante Easter Eggs, según ha revelado la compañía de
+                                    Treyarch.<br><br>
+
+                                    A falta de conocer al mínimo detalle todas las novedades que traerá consigo este
+                                    renovado modo zombis, el equipo de desarrollo promete nuevos personajes jugables que
+                                    son Samuel, Misty, Marlton y Russman, una mayor variedad de zombis, un armamento
+                                    notablemente ampliado con armas de diseño futurista, y parece que también
+                                    herramientas de combate cuerpo a cuerpo.<br><br>
+
+                                    La gran novedad será el modo campaña (TranZit), que se trata de una historia
+                                    cooperativa ambientada en un mundo en el cual los jugadores tendrán que viajar a
+                                    diferentes zonas montados en un autobús fortificado. Al mismo tiempo, en las
+                                    modalidades zombis podrán participar hasta ocho jugadores de forma simultánea, en el
+                                    modo pena.<br><br>
+
+                                    Además se podrá jugar de hasta cuatro jugadores en modo pantalla dividida, se podrán
+                                    crear nuevas armas a partir de objetos que encontremos en la partida como por
+                                    ejemplo el escudo antidisturbios que se ve en el tráiler y (también con objetos
+                                    encontrados en la partida) se agregaran partes en las paradas para acceder a lugares
+                                    escondidos en el juego, como también se podrán modificar cosas como el autobús.
+                                    También vuelve el reconocido "Pack a Punch" para mejorar las armas obtenidas durante
+                                    la partida, aunque se mantendrá en un lugar escondido en el juego. Al igual que la
+                                    campaña y el multijugador, el modo zombis es ahora más personalizable, y se podrá
+                                    elegir la ronda inicial, la dificultad y si se desea la aparición de ventajas y
+                                    demás.</font><br><br>
+                                    <center>
+                                        <iframe width="600" height="400" src="https://www.youtube.com/embed/svQffv_VcGk"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </center>
+                                </p>
+
+
+                            </div>
+                            <a class="boton_1"
+                                href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Añadir al
+                                Carro</a>
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <footer>
+        <div id="pie" style="opacity: 1;">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-12  columna">
+                        <div class="boton_02"><button
+                                class="m-header--title--icon iconGame fa-close is-bg_no-bg is-txt_hover-light-grey"
+                                id="btnOverlayCookiesClose"><img
+                                    src="https://cdn.icon-icons.com/icons2/1380/PNG/128/emblemunreadable_93487.png"
+                                    id="foto" width="25" onclick="ocultar()"></button></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <font color="orange">
+                <h2>Siguenos en nuestras redes sociales:</h2>
+            </font>
+
+            <!--Instagram-->
+            <a href="https://www.instagram.com/mma_games/"><img class="logos"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAHlBMVEX///8AAADX19fn5+fy8vKPj49cXFw0NDTIyMgLCwu4KPpkAAABYUlEQVRIid2W23LFIAhFvQDi//9woSdGjJjEmfah5SGTMS4vuNkmxO0IMWLaCKyCYNgKFgT2kCBI2iPyf0cA8hkw5XNGmEqttR20vBZCuEO4eAqpuEZQOxQN+oS+ahutENaP09ayDoQLpEZfcDpUdhEeFtCCZF40Yw0ImbGCaaw6f3GR0tsDIxHyiZA+ZgT6UOnIdRGI9IF9AT7C9fsUY8+UIMlBcjyQrOMjAMuiIjeEfYSOPbXMSc8KLxCOPQ10LO0BMZ+9Ng8xCT0T//OISWiA+AqxUsN32zeCTk3CT0grm4wnvEJOwRzFacpxIRgjS2x+0apkIUsrfkAtezSl5Ipf21e3QFmUGC5Kf8z7gMi5+W4ru7Sysw6DF5drcxTrIxfr05oSQx2CNNndFCaDRf8Otl412XjCUsfu4uMc7hDdbGYT6Zr3v3Xx/Qoyu/1tgCD83O2KVIaNkEsh7Py8feILV/0KmMLfyhwAAAAASUVORK5CYII="></a>
+            <!--Twitter-->
+            <a href="https://twitter.com/MmagamesE"><img class="logos"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAATlBMVEX///8AAAD+/v4BAQH9/f0CAgL8/PwDAwP5+fkXFxcSEhI4ODgzMzOlpaU+Pj4jIyPJyclJSUmbm5vb29uHh4fj4+Nvb29hYWFVVVXPz881sIsKAAACrElEQVRIibVW6XrcMAiUAB27TdI0R9u8/4uWAWTJx+ZftfZnryQYGA45pZr0onQeY1Y3+Ju+iC8R/shRAJtIElGlRDUka/x0+iwBEZIBp+qF7DnwZFudQ2xHV31YqzFJuABKY2rviktiVUIxzOmYq1fOY67KV8656e/FXIcpz1gjoF8xJrWpBGcT++qYe8umX9oD998ZAgUC+mz0qc8Gz4g4VzPZXJtCfUDY0LeSmY371DK3BCpkF59p1Rit5ORKIZ3tTdKC0mASl4miKqAHnmOt5XtFmKeElFxMaoXR+wvcQQUMgDGLDDa0uV01YNdf8wXgwOHbGtA/PrdDyfzhi79DhjPfuwwcDo4mCjyOnCBbZfsp7yFyBDD2PF56HW3+BHUf277tBShODVFemSklVDBsXTFyGelIzs60WbnR3RbJsjdvY5N651VfsNtGKAKlNI5y0+i3nS9heENGlt38U+pB5z7ElrsDZtXFuY8kR8ZOnF0Ad7GEiAsRldWT6cIwcWOMvbsgm1+LFStygE8BnCItLz3CVDIS75GADbFm4TB14/RAxTJKYYluWa3V/GSOnHg87t6dHEYR65HT89j8IHTA9PL8Axx8502z1Opp9PLmyf/QE1VmvXB2rNS9zL6x7NfaSgZnBV3nwjC2HFpqHFWoDUzCppNpbHdZO7D4LXTjU3lsnue3Y9MmO6akXXsP//bbo6sS0kHo0v/iOncycRBKusJo+XguyDh7tQquWNYerztWFD8zBaG59v21p8PxowhS+9Ngc1RXGamQzkPunlhe8pMzgyzPFxKIiCeXl+U4rUzg5XwebqS9T5yJUYOc83ZLmZp6816uVup124i/hPCTVYc9vR3ipE3jE+Psy/i6QIDEP21QSSLXEPGdRP4RY30gDhiJ8D4k4D+Pf4cdD3WaFx4tAAAAAElFTkSuQmCC"></a>
+            <!--Youtube-->
+            <a href=" https://www.youtube.com/channel/UCDSnShBasZXBrp48Tu87eZA/featured?view_as=subscriber"><img
+                    class="logos"
+                    src="https://asset-apac.unileversolutions.com/content/dam/unilever/rexona/global/deodorants_and_fragrances/deodorants/rexona_social_youtube-682435.png.ulenscale.50x50.png"></a>
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                        <a href="Privacidad.html" class="text-white">
+                            <h2><u>Politica de privacidad</u></h2>
+
+                        </a>
+                    </div>
+
+
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <a href="Uso.html" class="text-white">
+                            <h2><u>Politicas de uso</u></h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-12  columna">
+                        <a href="file:///F:/Marlon_Munoz/Proyecto_MMA/mmagames.html" class="text-dark">
+                            <h6><u>PAGINA DE INICIO</u></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div id="copyright">
+                <font color="orange">Venta de videojuegos- Preparando las mejores ofertas ©2019 MMA_GAMES</font>
+            </div>
+            <div id="powered"><a href="file:///F:/Marlon_Munoz/Proyecto_MMA/mmagames.html" target="_blank">Designed and
+                    developed by MMA</a></div><a href="file:///F:/Marlon_Munoz/Proyecto_MMA/mmagames.html"
+                target="_blank">
+            </a>
+        </div>
+        </div>
+
+    </footer>
+    <footer>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!--220X305-->
+                <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-12  columna">
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <font color="orange">
+            <h2>Siguenos en nuestras redes sociales:</h2>
+        </font>
+
+        <!--Instagram-->
+        <a href="https://www.instagram.com/mma_games/"><img class="logos"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAHlBMVEX///8AAADX19fn5+fy8vKPj49cXFw0NDTIyMgLCwu4KPpkAAABYUlEQVRIid2W23LFIAhFvQDi//9woSdGjJjEmfah5SGTMS4vuNkmxO0IMWLaCKyCYNgKFgT2kCBI2iPyf0cA8hkw5XNGmEqttR20vBZCuEO4eAqpuEZQOxQN+oS+ahutENaP09ayDoQLpEZfcDpUdhEeFtCCZF40Yw0ImbGCaaw6f3GR0tsDIxHyiZA+ZgT6UOnIdRGI9IF9AT7C9fsUY8+UIMlBcjyQrOMjAMuiIjeEfYSOPbXMSc8KLxCOPQ10LO0BMZ+9Ng8xCT0T//OISWiA+AqxUsN32zeCTk3CT0grm4wnvEJOwRzFacpxIRgjS2x+0apkIUsrfkAtezSl5Ipf21e3QFmUGC5Kf8z7gMi5+W4ru7Sysw6DF5drcxTrIxfr05oSQx2CNNndFCaDRf8Otl412XjCUsfu4uMc7hDdbGYT6Zr3v3Xx/Qoyu/1tgCD83O2KVIaNkEsh7Py8feILV/0KmMLfyhwAAAAASUVORK5CYII="></a>
+        <!--Twitter-->
+        <a href="https://twitter.com/MmagamesE"><img class="logos"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAATlBMVEX///8AAAD+/v4BAQH9/f0CAgL8/PwDAwP5+fkXFxcSEhI4ODgzMzOlpaU+Pj4jIyPJyclJSUmbm5vb29uHh4fj4+Nvb29hYWFVVVXPz881sIsKAAACrElEQVRIibVW6XrcMAiUAB27TdI0R9u8/4uWAWTJx+ZftfZnryQYGA45pZr0onQeY1Y3+Ju+iC8R/shRAJtIElGlRDUka/x0+iwBEZIBp+qF7DnwZFudQ2xHV31YqzFJuABKY2rviktiVUIxzOmYq1fOY67KV8656e/FXIcpz1gjoF8xJrWpBGcT++qYe8umX9oD998ZAgUC+mz0qc8Gz4g4VzPZXJtCfUDY0LeSmY371DK3BCpkF59p1Rit5ORKIZ3tTdKC0mASl4miKqAHnmOt5XtFmKeElFxMaoXR+wvcQQUMgDGLDDa0uV01YNdf8wXgwOHbGtA/PrdDyfzhi79DhjPfuwwcDo4mCjyOnCBbZfsp7yFyBDD2PF56HW3+BHUf277tBShODVFemSklVDBsXTFyGelIzs60WbnR3RbJsjdvY5N651VfsNtGKAKlNI5y0+i3nS9heENGlt38U+pB5z7ElrsDZtXFuY8kR8ZOnF0Ad7GEiAsRldWT6cIwcWOMvbsgm1+LFStygE8BnCItLz3CVDIS75GADbFm4TB14/RAxTJKYYluWa3V/GSOnHg87t6dHEYR65HT89j8IHTA9PL8Axx8502z1Opp9PLmyf/QE1VmvXB2rNS9zL6x7NfaSgZnBV3nwjC2HFpqHFWoDUzCppNpbHdZO7D4LXTjU3lsnue3Y9MmO6akXXsP//bbo6sS0kHo0v/iOncycRBKusJo+XguyDh7tQquWNYerztWFD8zBaG59v21p8PxowhS+9Ngc1RXGamQzkPunlhe8pMzgyzPFxKIiCeXl+U4rUzg5XwebqS9T5yJUYOc83ZLmZp6816uVup124i/hPCTVYc9vR3ipE3jE+Psy/i6QIDEP21QSSLXEPGdRP4RY30gDhiJ8D4k4D+Pf4cdD3WaFx4tAAAAAElFTkSuQmCC"></a>
+        <!--Youtube-->
+        <a href=" https://www.youtube.com/channel/UCDSnShBasZXBrp48Tu87eZA/featured?view_as=subscriber"><img
+                class="logos"
+                src="https://asset-apac.unileversolutions.com/content/dam/unilever/rexona/global/deodorants_and_fragrances/deodorants/rexona_social_youtube-682435.png.ulenscale.50x50.png"></a>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                    <a href="Privacidad.html" class="text-white">
+                        <h2><u>Politica de privacidad</u></h2>
+
+                    </a>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <a href="Uso.html" class="text-white">
+                        <h2><u>Politicas de uso</u></h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-12 col-lg-12 col-xl-12  columna">
+                    <a href="mmagames.html" class="text-dark">
+                        <h6><u>PAGINA DE INICIO</u></h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <font color="orange">Venta de videojuegos- Preparando las mejores ofertas ©2019 MMA_GAMES</font>
+        </div>
+        <div id="powered"><a href="mmagames.html" target="_blank">Designed and
+                developed by MMA</a></div><a href="mmagames.html" target="_blank">
+        </a>
+        </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</html>
