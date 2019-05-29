@@ -1,3 +1,14 @@
+<%-- 
+    Document   : juegosps4
+    Created on : 28-may-2019, 15:23:51
+    Author     : cice
+--%>
+<%@page import="java.sql.ResultSet"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    ResultSet filcon = (ResultSet) request.getAttribute("datos");
+%>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,9 +32,9 @@
 
             <div id="men0uprincipal">
                 <nav class="navbar navbar-dark bg-dark">
-                    <a class="navbar-brand"><img src="img/manu grande.jpg" width="200"
+                    <a class="navbar-brand" ><img src="img/manu grande.jpg" width="200"
                                                  height="100" alt=""></a>
-                    <h1 class="titulo">MMA GAMES</h1>
+                    <a href="index.html">  <h1 class="titulo">MMA GAMES</h1></a>
 
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -181,7 +192,6 @@
 
 
                                     </div>
-
                                     <!--                <div class="centrar">
                                       <div class="logoredes">
                     
@@ -234,6 +244,7 @@
                         <h2>NUESTRAS MEJORES OFERTAS <span class="badge badge-secondary">New!</span></h2>
                         <div class="card-deck">
                             <div class="card">
+
                                 <img
                                     src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcReAiN0iraLH46FuvXQWR3usPRWHFSf0giQowEnSTNi7k5HY_P6Bjv1a8qB_iO453EmfUXXvGgeBg&usqp=CAc"
                                     class="card-img-top" alt="...">
@@ -290,24 +301,30 @@
                             </div>
                         </div>
                         <div class="container-fluid">
+                            <%
+                                while (filcon.next()) {
+                            %>
                             <div class="row">
 
                                 <div class="col-12 col-sm-6 col-md-6 col-lg-12 col-xl-12">
+
                                     <br>
+
                                     <div class="card mb-3 card text-white bg-dark mb-3 card border-info mb-3 card border radius"
                                          style="max-width: 540px;">
+
                                         <div class="row no-gutters">
+
                                             <div class="col-md-4">
                                                 <br>
                                                 <img
-                                                    src="https://s3.gaming-cdn.com/images/products/95/157x218/call-of-duty-black-ops-ii-cover.jpg"
+                                                    src="<%=filcon.getString("imagen")%>"
                                                     class="card-img" alt="..." border="1">
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Call Of Duty Black Ops II</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                                        additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title"><%=filcon.getString("nombre")%></h5>
+                                                    <p class="card-text"><%=filcon.getString("precio")%>€</p>
                                                     <br><br><br>
                                                     <a class="boton_1"
                                                        href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
@@ -315,113 +332,19 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
-                                    <div class="card mb-3 card text-white bg-dark mb-3 card border-info mb-3 card border radius"
-                                         style="max-width: 540px;">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-4">
-                                                <br>
-                                                <img
-                                                    src="https://s1.gaming-cdn.com/images/products/1512/157x218/the-elder-scrollsecial-edition-cover.jpg"
-                                                    class="card-img" alt="..." border="1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Skyrim</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                                        additional content. This content is a little bit longer.</p>
-                                                    <br><br><br>
-                                                    <a class="boton_1"
-                                                       href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3 card text-white bg-dark mb-3 card border-info mb-3 card border radius"
-                                         style="max-width: 540px;">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-4">
-                                                <br>
-                                                <img
-                                                    src="https://s3.gaming-cdn.com/images/products/2060/157x218/dark-souls-3-deluxe-edition-cover.jpg"
-                                                    class="card-img" alt="..." border="1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Dark Souls IIIS</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                                        additional content. This content is a little bit longer.</p>
-                                                    <br><br><br>
-                                                    <a class="boton_1"
-                                                       href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3 card text-white bg-dark mb-3 card border-info mb-3 card border radius"
-                                         style="max-width: 540px;">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-4">
-                                                <br>
-                                                <img
-                                                    src="https://s2.gaming-cdn.com/images/products/406/157x218/tom-clancys-rainbow-six-siege-cover.jpg"
-                                                    class="card-img" alt="..." border="1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Raimbow Six Siege</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                                        additional content. This content is a little bit longer.</p>
-                                                    <br><br><br>
-                                                    <a class="boton_1"
-                                                       href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3 card text-white bg-dark mb-3 card border-info mb-3 card border radius"
-                                         style="max-width: 540px;">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-4">
-                                                <br>
-                                                <img src="https://s1.gaming-cdn.com/images/products/3339/157x218/mortal-kombat-11-cover.jpg"
-                                                     class="card-img" alt="..." border="1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Mortal Kombat XI</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                                        additional content. This content is a little bit longer.</p>
-                                                    <br><br><br>
-                                                    <a class="boton_1"
-                                                       href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-3 card text-white bg-dark mb-3 card border-info mb-3 card border radius"
-                                         style="max-width: 540px;">
-                                        <div class="row no-gutters">
-                                            <div class="col-md-4">
-                                                <br>
-                                                <img src="https://s3.gaming-cdn.com/images/products/2603/157x218/rage-2-cover.jpg"
-                                                     class="card-img" alt="..." border="1">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">RAGE 2</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                                        additional content. This content is a little bit longer.</p>
-                                                    <br><br><br>
-                                                    <a class="boton_1"
-                                                       href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Comprar ahora</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
+
+
+
+
 
                                 </div>
+
                             </div>
+                             <% } %>
                         </div>
 
 
