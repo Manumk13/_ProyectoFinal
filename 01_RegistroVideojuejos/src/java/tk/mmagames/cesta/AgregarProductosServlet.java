@@ -24,6 +24,7 @@ public class AgregarProductosServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String nombre = request.getParameter("nombre");
+        String destino = request.getParameter("destino");
         HttpSession sesion = request.getSession(true);
         ArrayList<String> cesta = new ArrayList();
         if (sesion.getAttribute("cesta") != null) {
@@ -31,12 +32,13 @@ public class AgregarProductosServlet extends HttpServlet {
         }
         cesta.add(nombre);
         sesion.setAttribute("cesta", cesta);
+        response.sendRedirect(request.getContextPath() + "/" + destino);
+        /*
         RequestDispatcher dispatcher = 
-                    getServletContext().getRequestDispatcher("../tk.mmagames.tablajuegos/ConsultaJuegosServlet" );
-                    getServletContext().getRequestDispatcher("/ConsultaConsolasServlet" );
-                    getServletContext().getRequestDispatcher("/ConsultaAccesoriosServlet" );
+                    getServletContext().getRequestDispatcher("/index.html" );
         
         dispatcher.forward(request, response);
+        */
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

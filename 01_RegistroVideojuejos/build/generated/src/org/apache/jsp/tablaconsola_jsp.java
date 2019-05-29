@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.sql.ResultSet;
 
-public final class tablasjuegos_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class tablaconsola_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -47,43 +47,48 @@ public final class tablasjuegos_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\n");
       out.write("\n");
 
-    ResultSet juegos = (ResultSet) request.getAttribute("datos");
+    ResultSet consolas = (ResultSet) request.getAttribute("datos");
 
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>TABLA JUEGOS</title>\n");
-      out.write("\n");
+      out.write("        <title>TABLA CONSOLAS</title>\n");
       out.write("        <style>\n");
-      out.write("\n");
+      out.write("            \n");
       out.write("            .principal{\n");
-      out.write("\n");
+      out.write("                \n");
       out.write("                background-color: teal;\n");
       out.write("                color: whitesmoke;\n");
-      out.write("\n");
+      out.write("                \n");
       out.write("            }\n");
       out.write("            table{\n");
-      out.write("                  text-align: center;\n");
-      out.write("\n");
+      out.write("                \n");
+      out.write("                \n");
       out.write("                background-color: gold;\n");
       out.write("            }\n");
-      out.write("\n");
       out.write("            a{\n");
-      out.write("\n");
+      out.write("                \n");
       out.write("                text-decoration: none;\n");
       out.write("                color: #0000FF;\n");
       out.write("            }\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("           \n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("            \n");
       out.write("        </style>\n");
+      out.write("        \n");
+      out.write("        \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <table border=\"1\">\n");
       out.write("            ");
 
-                while (juegos.next()) {
+                while (consolas.next()) {
             
       out.write("\n");
       out.write("\n");
@@ -93,43 +98,35 @@ public final class tablasjuegos_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                <td class=\"principal\">IMAGEN</td>\n");
       out.write("\n");
       out.write("                <td class=\"principal\">NOMBRE</td>\n");
-      out.write("                <td class=\"principal\">COMPAÑIA</td>\n");
-      out.write("                <td class=\"principal\">DESARROLLADOR</td>\n");
-      out.write("                <td class=\"principal\">GENERO</td>\n");
       out.write("                <td class=\"principal\">PLATAFORMA</td>\n");
+      out.write("                <td class=\"principal\">DESCRIPCION</td>\n");
+      out.write("\n");
       out.write("                <td class=\"principal\">PRECIO</td>\n");
-      out.write("                <td class=\"principal\">BORRAR</td>\n");
+      out.write("                 <td class=\"principal\">ELIMINAR</td>\n");
       out.write("\n");
       out.write("            </tr>\n");
       out.write("            <tr>\n");
-      out.write("                <td>");
-      out.print(juegos.getInt("id"));
+      out.write("                <td class=\"id\">");
+      out.print(consolas.getInt("id"));
       out.write("</td>\n");
       out.write("                <td><img width=\"100px\" src=\"");
-      out.print(juegos.getString("imagen"));
+      out.print(consolas.getString("imagen"));
       out.write("\"</td>\n");
       out.write("\n");
       out.write("                <td>");
-      out.print(juegos.getString("nombre"));
+      out.print(consolas.getString("nombre"));
       out.write("</td>\n");
       out.write("                <td>");
-      out.print(juegos.getString("compañia"));
+      out.print(consolas.getString("plataforma"));
       out.write("</td>\n");
       out.write("                <td>");
-      out.print(juegos.getString("desarrollador"));
+      out.print(consolas.getString("descripcion"));
       out.write("</td>\n");
       out.write("                <td>");
-      out.print(juegos.getString("genero"));
-      out.write("</td>\n");
-      out.write("                <td>");
-      out.print(juegos.getString("plataforma"));
-      out.write("</td>\n");
-      out.write("\n");
-      out.write("                <td>");
-      out.print(juegos.getFloat("precio"));
+      out.print(consolas.getFloat("precio"));
       out.write("€</td>\n");
-      out.write("                <td><a href=\"BorradoJuegosServlet?idCamiseta=");
-      out.print(juegos.getInt("id"));
+      out.write("                <td><a href=\"BorradoConsolasServlet?idConsolas=");
+      out.print(consolas.getInt("id"));
       out.write("\">Borrar</a></td>\n");
       out.write("\n");
       out.write("            </tr>\n");
@@ -139,6 +136,7 @@ public final class tablasjuegos_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("        </table>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
