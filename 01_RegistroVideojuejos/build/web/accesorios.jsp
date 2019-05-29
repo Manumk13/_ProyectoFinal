@@ -328,7 +328,7 @@
                                                     <p class="card-text"><%=filacc.getString("precio")%>€</p>
                                                     <br><br><br>
                                                     <a class="boton_1"
-                                                       href="">Comprar ahora</a>
+                                                       href="AgregarProductosServlet?nombre=<%=filacc.getString("nombre")%>&destino=index.html">Comprar ahora</a>
 
                                                 </div>
                                             </div>
