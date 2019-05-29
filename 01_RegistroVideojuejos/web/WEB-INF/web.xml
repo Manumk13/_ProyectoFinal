@@ -57,6 +57,18 @@
         <servlet-class>tk.mmagames.validadoradmin.ValidadorAdminServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>FiltroJuegosServlet</servlet-name>
+        <servlet-class>tk.mmagames.filjuegos.FiltroJuegosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FiltroConsolasServlet</servlet-name>
+        <servlet-class>tk.mmagames.filtroconsolas.FiltroConsolasServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FiltroAccesoriosServlet</servlet-name>
+        <servlet-class>tk.mmagames.filacc.FiltroAccesoriosServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>AgregarProductosServlet</servlet-name>
         <servlet-class>tk.mmagames.cesta.AgregarProductosServlet</servlet-class>
     </servlet>
@@ -121,6 +133,18 @@
         <url-pattern>/ValidadorAdminServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>FiltroJuegosServlet</servlet-name>
+        <url-pattern>/FiltroJuegosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FiltroConsolasServlet</servlet-name>
+        <url-pattern>/FiltroConsolasServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FiltroAccesoriosServlet</servlet-name>
+        <url-pattern>/FiltroAccesoriosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>        
         <servlet-name>AgregarProductosServlet</servlet-name>
         <url-pattern>/AgregarProductosServlet</url-pattern>
     </servlet-mapping>
